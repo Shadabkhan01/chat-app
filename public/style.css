@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hide{
+    display: none !important;
+}
+
+.chat-input-name{
+    position: absolute;
+    display: flex;
+    top: 40%;
+    left: 30%;
+}
+    
+#chat-user{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    height: 25px;
+    width: 175px;
+    padding: 8px;
+}
+    
+.join-chat{
+    color: white;
+    background: #34495e;
+    width: 90px;
+    margin-left: 2px;
+    padding: 2px;
+    border-radius: 6px;
+    padding-left: 7px;
+}    
+
+
+.chat-container{
+    background: lightskyblue;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-image: url(./Whatsapp-Wallpaper-112.jpg);
+    position: relative;
+    background-size: contain;
+}
+
+.chat-content{
+    height: 100%;
+}
+
+.chat-box{
+    height: 90%;
+    overflow: auto;
+}
+.chat{
+    clear: both;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.chat-name{
+    font-weight: bold;
+
+}
+
+.chat-text{
+
+}
+
+.leave{
+    color:white;
+    background: #e74c3c;
+    opacity: 0.7;
+    /* width: 80%; */
+    text-align: center;
+}
+    
+.join{
+    color:white;
+    background: #3498db;
+    /* width: 80%; */
+    text-align: center;
+}
+    
+    
+.left{
+    background: white;
+    float: left;
+    color:#34495e;
+    max-width: 300px;
+    min-width: 150px;
+    word-wrap: break-word;
+    
+    }
+.right{
+    background: #34495e;
+    float: right;
+    color:white;
+    max-width: 300px;
+    min-width: 150px;
+    word-wrap: break-word;
+    }
+    
+.chat-input{
+    background: white;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    height: 8%;
+    align-items: center;
+    justify-content: space-around;
+    }
+.chat-input input{
+    outline:none;
+    border: none;
+    height: 100%;
+    width: 85%;
+    }
+    
+.fas{
+    color:cadetblue;
+    }
+    
+.send{
+    
+    }
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #def1ec;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(7, 119, 72);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(2, 99, 70);
+  }
