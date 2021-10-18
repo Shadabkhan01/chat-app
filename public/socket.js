@@ -5,10 +5,12 @@ socket.on("user-joined", function (name) {
     joinDiv.classList.add("join");
     joinDiv.innerHTML = `${name} joined the chat !`;
     chatBox.append(joinDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
   });
   
   socket.on("receive-chat", function (userObj) {
     addChat("left", userObj);
+    chatBox.scrollTop = chatBox.scrollHeight;
   });
   
   socket.on("leave", function (name) {
@@ -17,6 +19,7 @@ socket.on("user-joined", function (name) {
     leaveDiv.classList.add("leave");
     leaveDiv.innerHTML = `${name} left the chat !`;
     chatBox.append(leaveDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
   });
   
   function addChat(sender, userObj) {
